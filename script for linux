@@ -2,3 +2,13 @@
 tr '[:space:]' '[\n*]' < cluster.yml| grep -v "^\s*$" | sort| uniq -c |sort -bnr|head -10
 
 ##
+python: https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf
+bash script: https://devhints.io/bash
+regex: https://cs.lmu.edu/~ray/notes/regex/
+
+extras:
+https://www.geeksforgeeks.org/python-program-convert-string-list/
+https://www.geeksforgeeks.org/python-program-to-convert-a-list-to-string/
+
+
+https://www.geeksforgeeks.org/python-get-unique-values-list/
