@@ -1,0 +1,4 @@
+##get top 10 high occured words in linux file:
+tr '[:space:]' '[\n*]' < cluster.yml| grep -v "^\s*$" | sort| uniq -c |sort -bnr|head -10
+
+##
