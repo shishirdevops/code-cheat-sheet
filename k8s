@@ -1,0 +1,10 @@
+
+##Export the logs of the e-com-1123 pod to the file /opt/outputs/e-com-1123.logs
+
+kubectl logs e-com-1123 --namespace e-commerce > /opt/outputs/e-com-1123.logs
+
+##Create a new Secret named db-secret-xxdf with the data given(on the right).
+kubectl create secret generic db-secret-xxdf --from-literal=DB_Host=sql01 --from-literal=DB_User=root --from-literal=DB_Password=password123
+
+##
+
