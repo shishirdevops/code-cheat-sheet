@@ -6,5 +6,7 @@ kubectl logs e-com-1123 --namespace e-commerce > /opt/outputs/e-com-1123.logs
 ##Create a new Secret named db-secret-xxdf with the data given(on the right).
 kubectl create secret generic db-secret-xxdf --from-literal=DB_Host=sql01 --from-literal=DB_User=root --from-literal=DB_Password=password123
 
-##
+##Create a service messaging-service to expose the redis deployment in the marketing namespace within the cluster on port 6379.
+
+kubectl expose deployment redis --port=6379 --name messaging-service --namespace marketing
 
